@@ -1,3 +1,4 @@
+
 FROM python:3.11-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -13,4 +14,4 @@ COPY bot1.py ./bot1.py
 
 EXPOSE 7860
 
-CMD ["python", "bot1.py", "-t", "webrtc"]
+CMD ["sh", "-c", "python bot1.py -t webrtc --host 0.0.0.0 --port ${PORT:-7860}"]
