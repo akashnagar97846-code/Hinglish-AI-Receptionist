@@ -1,0 +1,13 @@
+/* Receptionist page additions */
+.transcript-empty{color:#8d9789;font-size:12px;line-height:1.8;padding:22px 0}
+.transcript-line.interim p{color:#8d9789;font-style:italic}
+.transcript-line p{font-size:13px;line-height:1.75}
+.backend-pill{cursor:default}
+.backend-pill.bad{border-color:#e9b4a9;color:#a94d3e;background:#fdf0ed}
+.mic-message{line-height:1.6;align-items:flex-start}
+.mic-message svg{margin-top:3px;min-width:15px}
+.mic-message code{font:11px 'DM Mono',monospace;background:#eceee6;padding:2px 5px;border-radius:4px}
+.status-card{background:#1a2018;border:1px solid #34402e;border-radius:9px;padding:13px;margin-bottom:14px;font-size:11px;line-height:1.7;color:#a9b6a4}
+.status-card .mono{color:#87957f;display:block;margin-bottom:6px}
+.status-card strong{color:var(--lime);font-weight:600}
+.status-card.bad strong{color:#f0a090}

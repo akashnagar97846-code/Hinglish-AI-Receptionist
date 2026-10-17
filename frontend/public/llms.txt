@@ -1,0 +1,23 @@
+# Beyond Tech Intelligence
+
+> Beyond Tech Intelligence (BTI) builds practical AI systems for businesses in Jaipur, Rajasthan, India.
+
+## What BTI offers
+
+- AI Receptionist Development: browser-first voice receptionists from Rs 24,999.
+- RAG Knowledge Assistants: grounded assistants from Rs 49,999.
+- Agentic AI Automation: custom-scoped workflow automation.
+
+## Product: Nova AI Receptionist
+
+Nova is a browser-first AI receptionist that speaks Hinglish in Roman script by default, can switch to plain English, answers from approved business information, and shows a live transcript. Customers need a microphone-enabled browser; no phone number or app is required.
+
+Nova does not confirm bookings, send emails, make phone calls, or invent business facts. The public demo is available at https://bti-receptionist.onrender.com/.
+
+## Location and service area
+
+BTI is based in Jaipur, Rajasthan, India and serves businesses that want a helpful first response across web and voice experiences.
+
+## Source
+
+For the most current product details, use the public website: https://bti-receptionist.onrender.com/

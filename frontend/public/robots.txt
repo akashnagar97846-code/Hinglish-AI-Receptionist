@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /auth
+Disallow: /receptionist
+
+Sitemap: https://bti-receptionist.onrender.com/sitemap.xml

@@ -1,0 +1,3 @@
+pipecat-ai[webrtc,runner,groq,cartesia]==1.12.0
+python-dotenv>=1.0.1
+loguru>=0.7.3

@@ -1,0 +1,13 @@
+[project]
+name = "ai-talking-agent"
+version = "0.1.0"
+description = "Hindi browser voice receptionist built with Pipecat, Groq and Cartesia"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "pipecat-ai[webrtc,runner,groq,cartesia]==1.12.0",
+    "python-dotenv>=1.0.1",
+    "loguru>=0.7.3",
+]
+
+[tool.uv]
+package = false

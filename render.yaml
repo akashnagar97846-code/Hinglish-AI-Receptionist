@@ -1,0 +1,42 @@
+services:
+  - type: web
+    name: bti-api
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /status
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: CORS_ORIGINS
+        value: https://bti-receptionist.onrender.com
+      - key: COOKIE_SECURE
+        value: "true"
+
+  - type: web
+    name: bti-voice
+    runtime: docker
+    plan: free
+    dockerfilePath: ./backend/Dockerfile.bot
+    healthCheckPath: /status
+    envVars:
+      - key: GROQ_API_KEY_1
+        sync: false
+      - key: CARTESIA_API_KEY_1
+        sync: false
+      - key: STT_LANGUAGE
+        value: en
+
+  - type: static
+    name: bti-receptionist
+    plan: free
+    rootDir: frontend
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: https://bti-api.onrender.com
+      - key: VITE_PIPECAT_URL
+        value: https://bti-voice.onrender.com
+      - key: VITE_SITE_URL
+        value: https://bti-receptionist.onrender.com
